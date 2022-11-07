@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="lightbox.min.css">
+    <script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
+    <script src="tailwindcss.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!---------==== navbar start ===-------->
+    <section id="navbar" class="z-50 fixed bg-white top-0 left-0 right-0 mb-[30px]">
+        <!---------====  =====-------->
+        <div class="container mx-auto px-5">
+            <!---------====  =====-------->
+            <div class="flex justify-between items-center py-3">
+                <!---------==== logo =====-------->
+                <div>
+                    <img src="img/logo/logo.png" alt="" class="w-36">
+                </div>
+                <!---------==== menu =====-------->
+                <div class="md:block hidden text-sm">
+                    <!---------==== home =====-------->
+                    <a href="#" class="md:px-4 px-2 hover:text-[#6168FF] text-gray-500 font-bold hover:font-bold">Home</a>
+                    <!---------==== service =====-------->
+                    <a href="#three" class="md:px-4 px-2 hover:text-[#6168FF] text-gray-500 font-bold hover:font-bold">Service</a>
+                    <!---------==== top deals =====-------->
+                    <a href="#" class="md:px-4 px-2 hover:text-[#6168FF] text-gray-500 font-bold hover:font-bold">Top Deals</a>
+                    <!---------==== gallery =====-------->
+                    <a href="#" class="md:px-4 px-2 hover:text-[#6168FF] text-gray-500 font-bold hover:font-bold">Gallery</a>
+                    <!---------==== package =====-------->
+                    <a href="#" class="md:px-4 px-2 hover:text-[#6168FF] text-gray-500 font-bold hover:font-bold">Package</a>
+                    <!---------==== blog =====-------->
+                    <a href="#" class="md:px-4 px-2 hover:text-[#6168FF] text-gray-500 font-bold hover:font-bold">Blog</a>
+                    <!---------==== contact =====-------->
+                    <a href="#" class="md:px-4 px-2 hover:text-[#6168FF] text-gray-500 font-bold hover:font-bold">Contact</a>
+                </div>
+                <div class="md:hidden block w-[45px] h-[45px] flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentcolor" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 border border-2 rounded">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>
+                      
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------==== navbar end ===-------->
+
+
+    <!---------==== hero start ===-------->
+    <section id="hero" class="bg-[url(img/header/bg.jpg)] bg-center bg-cover bg-center h-screen flex flex-col justify-center items-center">
+        
+        <!---------==== text ===-------->
+        <div class="text-white flex flex-col justify-center items-center">
+            <!---------====  =====-------->
+            <p class="md:text-2xl text-center text-xl">We Are Here to Make Your Travel Comfort</p>
+            <!---------====  =====-------->
+            <p class="lg:text-6xl md:text-5xl text-3xl text-center font-bold px-[20px]">Make Your Tour Amazing With Us</p>
+            <!---------====  =====-------->
+            <button class="md:mt-[50px] mt-[20px] duration-300 md:py-3 py-2 md:px-4 px-1 md:text-md text-sm font-bold border-2 border-[#6168FF] hover:border-white bg-[#6168FF] hover:bg-transparent rounded">DISCOVER NOW</button>
+        </div>
+        <!---------==== fixed bottom scroll button =====-------->
+        <div id="men" class="fixed bottom-3 right-3 opacity-50 shadow bg-blue-400 hover:bg-blue-600 duration-500 rounded-full w-[40px] h-[40px] flex items-center justify-center">
+            <a href="#hero"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75L12 3m0 0l3.75 3.75M12 3v18" />
+              </svg></a>
+              
+        </div>
+    </section>
+    <!---------==== hero end ===-------->
+
+
+    <!---------==== section 1 start ===-------->
+    <section id="one" class="container mx-auto px-5 py-[100px]">
+        <div class="grid md:grid-cols-2 grid-cols-1 gap-12">
+            <div>
+                <div class="grid sm:grid-cols-2 grid-cols-1 gap-12">
+                    <div class="lg:order-first order-last">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 text-[#6168FF]">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+                          </svg>
+                        <p class="font-bold py-4 text-gray-600 text-2xl">Activities</p>
+                        <p class="text-sm text-gray-500 text-justify">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem amet quaerat atque labore sapiente a sit quis fuga! Cupiditate, eum?
+                        </p>
+                    </div>
+
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 text-[#6168FF]">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+                          </svg>
+                        <p class="font-bold py-4 text-gray-600 text-2xl">Travel Arrangements</p>
+                        <p class="text-sm text-gray-500 text-justify">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem amet quaerat atque labore sapiente a sit quis fuga! Cupiditate, eum?
+                        </p>
+                    </div>
+
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 text-[#6168FF]">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+                          </svg>
+                        <p class="font-bold py-4 text-gray-600 text-2xl">Private Guide</p>
+                        <p class="text-sm text-gray-500 text-justify">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem amet quaerat atque labore sapiente a sit quis fuga! Cupiditate, eum?
+                        </p>
+                    </div>
+
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 text-[#6168FF]">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+                          </svg>
+                        <p class="font-bold py-4 text-gray-600 text-2xl">Location Manager</p>
+                        <p class="text-sm text-gray-500 text-justify">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem amet quaerat atque labore sapiente a sit quis fuga! Cupiditate, eum?
+                        </p>
+                    </div>
+                </div>                
+            </div>
+            <div class="lg:order-last order-first">
+                <img src="img/middle/choose.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!---------==== section 1 end ===-------->
+
+    <!---------==== section 2 start ===-------->
+    <section id="two" class="container mx-auto px-5 md:pb-[100px] pb-[50px]">
+        <!-------=== section name ===-------->
+        <div class="relative flex justify-center pb-12">
+            <!-------=======-------->
+            <p class="relative md:text-[70px] text-[40px] text-center font-bold text-gray-200">DESTINATIONS</p>
+            <!-------=======-------->
+            <p class="absolute text-center md:pt-7 pt-3 font-bold">DESTINATIONS</p>
+            <!-------=======-------->
+            <p class="absolute text-center md:pt-12 pt-7 font-bold text-xl text-[#6168FF]">TRAVEL MOST POPULAR PLACE</p>
+        </div>
+        <div class="grid md:grid-cols-3 grid-cols-1 gap-6">
+            <!-------=== column 1 ===-------->
+            <div class="border border-2 cursor-pointer rounded">
+                <!-------======-------->
+                <img src="img/middle/1.jpg" alt="" class=" object-cover mx-auto">
+                <!-------======-------->
+                <div class="flex items-center justify-between px-6">
+                    <!-------======-------->
+                    <p class="py-4 font-bold md:text-2xl text-xl">Burzo Khalifa, Dubai</p>
+                    <!-------======-------->
+                    <p class="md:py-4 py-2 md:text-2xl text-xl text-gray-500">$4.5k</p>
+                </div>
+                <!-------======-------->
+                <p class="text-gray-400 px-6 pb-6 flex">
+                    <!-------======-------->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    10 Days Trip</p>
+            </div>
+            <!-------=== column 2 ===-------->
+            <div class="border border-2 cursor-pointer rounded">
+                <!-------======-------->
+                <img src="img/middle/2.jpg" alt="" class=" object-cover mx-auto">
+                <!-------======-------->
+                <div class="flex items-center justify-between px-6">
+                    <!-------======-------->
+                    <p class="py-4 font-bold md:text-2xl text-xl">Burzo Khalifa, Dubai</p>
+                    <!-------======-------->
+                    <p class="md:py-4 py-2 md:text-2xl text-xl text-gray-500">$4.5k</p>
+                </div>
+                <!-------======-------->
+                <p class="text-gray-400 px-6 pb-6 flex">
+                    <!-------======-------->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    10 Days Trip</p>
+            </div>
+            <!-------=== column 3 ===-------->
+            <div class="border border-2 cursor-pointer rounded">
+                <!-------======-------->
+                <img src="img/middle/3.jpg" alt="" class=" object-cover mx-auto">
+                <!-------======-------->
+                <div class="flex items-center justify-between px-6">
+                    <!-------======-------->
+                    <p class="py-4 font-bold md:text-2xl text-xl">Burzo Khalifa, Dubai</p>
+                    <!-------======-------->
+                    <p class="md:py-4 py-2 md:text-2xl text-xl text-gray-500">$4.5k</p>
+                </div>
+                <!-------======-------->
+                <p class="text-gray-400 px-6 pb-6 flex">
+                    <!-------======-------->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    10 Days Trip</p>
+            </div>
+        </div>
+    </section>
+    <!---------==== section 2 end ===-------->
+ 
+    <!---------==== section 3 start ===-------->
+    <section id="three" class="container mx-auto px-5 md:pb-[100px] pb-[50px]">
+        <!-------=== section name ===-------->
+        <div class="relative flex justify-center pb-12">
+            <!-------=======-------->
+            <p class="relative md:text-[70px] text-[40px] text-center font-bold text-gray-200">SERVICES</p>
+            <!-------=======-------->
+            <p class="absolute text-center md:pt-7 pt-3 font-bold">SERVICES</p>
+            <!-------=======-------->
+            <p class="absolute text-center md:pt-12 pt-7 font-bold text-xl text-[#6168FF]">What We Offer For You</p>
+        </div>
+        <div class="grid md:grid-cols-3 grid-cols-1 gap-8">
+            <!-------=== column 1 ===-------->
+            <div class="bg-[#F4F9FF] cursor-pointer rounded p-8 flex items-start justify-between gap-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentcolor" class="w-[100px] text-[#6168FF]" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M32 32c17.7 0 32 14.3 32 32V320H288V160c0-17.7 14.3-32 32-32H544c53 0 96 43 96 96V448c0 17.7-14.3 32-32 32s-32-14.3-32-32V416H352 320 64v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V64C0 46.3 14.3 32 32 32zM176 288c-44.2 0-80-35.8-80-80s35.8-80 80-80s80 35.8 80 80s-35.8 80-80 80z"/></svg>
+                <div>
+                    <p class="text-2xl font-bold pb-4">Delux Room</p>
+                    <p class="text-gray-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga veniam similique deserunt veritatis placeat</p>
+                </div>
+            </div>
+            <!-------=== column 2 ===-------->
+            <div class="bg-[#F4F9FF] cursor-pointer rounded p-8 flex items-start justify-between gap-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentcolor" class="w-[100px] text-[#6168FF]" viewBox="0 0 512 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M464 256H48a48 48 0 0 0 0 96h416a48 48 0 0 0 0-96zm16 128H32a16 16 0 0 0-16 16v16a64 64 0 0 0 64 64h352a64 64 0 0 0 64-64v-16a16 16 0 0 0-16-16zM58.64 224h394.72c34.57 0 54.62-43.9 34.82-75.88C448 83.2 359.55 32.1 256 32c-103.54.1-192 51.2-232.18 116.11C4 180.09 24.07 224 58.64 224zM384 112a16 16 0 1 1-16 16 16 16 0 0 1 16-16zM256 80a16 16 0 1 1-16 16 16 16 0 0 1 16-16zm-128 32a16 16 0 1 1-16 16 16 16 0 0 1 16-16z"/></svg>
+                <div>
+                    <p class="text-2xl font-bold pb-4">Delicoius Food</p>
+                    <p class="text-gray-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga veniam similique deserunt veritatis placeat</p>
+                </div>
+            </div>
+            <!-------=== column 3 ===-------->
+            <div class="bg-[#F4F9FF] cursor-pointer rounded p-8 flex items-start justify-between gap-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentcolor" class="w-[100px] text-[#6168FF]" viewBox="0 0 512 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M499.99 176h-59.87l-16.64-41.6C406.38 91.63 365.57 64 319.5 64h-127c-46.06 0-86.88 27.63-103.99 70.4L71.87 176H12.01C4.2 176-1.53 183.34.37 190.91l6 24C7.7 220.25 12.5 224 18.01 224h20.07C24.65 235.73 16 252.78 16 272v48c0 16.12 6.16 30.67 16 41.93V416c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-32h256v32c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-54.07c9.84-11.25 16-25.8 16-41.93v-48c0-19.22-8.65-36.27-22.07-48H494c5.51 0 10.31-3.75 11.64-9.09l6-24c1.89-7.57-3.84-14.91-11.65-14.91zm-352.06-17.83c7.29-18.22 24.94-30.17 44.57-30.17h127c19.63 0 37.28 11.95 44.57 30.17L384 208H128l19.93-49.83zM96 319.8c-19.2 0-32-12.76-32-31.9S76.8 256 96 256s48 28.71 48 47.85-28.8 15.95-48 15.95zm320 0c-19.2 0-48 3.19-48-15.95S396.8 256 416 256s32 12.76 32 31.9-12.8 31.9-32 31.9z"/></svg>
+                <div>
+                    <p class="text-2xl font-bold pb-4">Airport Taxi</p>
+                    <p class="text-gray-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga veniam similique deserunt veritatis placeat</p>
+                </div>
+            </div>
+            <!-------=== column 1 ===-------->
+            <div class="bg-[#F4F9FF] cursor-pointer rounded p-8 flex items-start justify-between gap-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentcolor" class="w-[100px] text-[#6168FF]" viewBox="0 0 640 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M634.91 154.88C457.74-8.99 182.19-8.93 5.09 154.88c-6.66 6.16-6.79 16.59-.35 22.98l34.24 33.97c6.14 6.1 16.02 6.23 22.4.38 145.92-133.68 371.3-133.71 517.25 0 6.38 5.85 16.26 5.71 22.4-.38l34.24-33.97c6.43-6.39 6.3-16.82-.36-22.98zM320 352c-35.35 0-64 28.65-64 64s28.65 64 64 64 64-28.65 64-64-28.65-64-64-64zm202.67-83.59c-115.26-101.93-290.21-101.82-405.34 0-6.9 6.1-7.12 16.69-.57 23.15l34.44 33.99c6 5.92 15.66 6.32 22.05.8 83.95-72.57 209.74-72.41 293.49 0 6.39 5.52 16.05 5.13 22.05-.8l34.44-33.99c6.56-6.46 6.33-17.06-.56-23.15z"/></svg>
+                <div>
+                    <p class="text-2xl font-bold pb-4">Free Wifi</p>
+                    <p class="text-gray-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga veniam similique deserunt veritatis placeat</p>
+                </div>
+            </div>
+            <!-------=== column 2 ===-------->
+            <div class="bg-[#F4F9FF] cursor-pointer rounded p-8 flex items-start justify-between gap-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentcolor" class="w-[100px] text-[#6168FF]" viewBox="0 0 512 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M376.45 32h-240.9A303.17 303.17 0 0 1 0 0v96c0 17.67 14.33 32 32 32h32v64H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h48v240c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V256h256v240c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V256h48c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16h-48v-64h32c17.67 0 32-14.33 32-32V0a303.17 303.17 0 0 1-135.55 32zM128 128h96v64h-96v-64zm256 64h-96v-64h96v64z"/></svg>
+                <div>
+                    <p class="text-2xl font-bold pb-4">Free Medication</p>
+                    <p class="text-gray-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga veniam similique deserunt veritatis placeat</p>
+                </div>
+            </div>
+            <!-------=== column 3 ===-------->
+            <div class="bg-[#F4F9FF] cursor-pointer rounded p-8 flex items-start justify-between gap-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentcolor" class="w-[100px] text-[#6168FF]" viewBox="0 0 640 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M320 384H128V224H64v256c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V224h-64v160zm314.6-241.8l-85.3-128c-6-8.9-16-14.2-26.7-14.2H117.4c-10.7 0-20.7 5.3-26.6 14.2l-85.3 128c-14.2 21.3 1 49.8 26.6 49.8H608c25.5 0 40.7-28.5 26.6-49.8zM512 496c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V224h-64v272z"/></svg>
+                <div>
+                    <p class="text-2xl font-bold pb-4">Tour Guide</p>
+                    <p class="text-gray-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga veniam similique deserunt veritatis placeat</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!---------==== section 3 end ===-------->
+    
+    <!---------==== section 4 start ===-------->
+    <section id="four" class="container mx-auto px-5 md:pb-[100px] pb-[50px]">
+        <!-------=== section name ===-------->
+        <div class="relative flex justify-center pb-12">
+            <!-------=======-------->
+            <p class="relative md:text-[70px] text-[40px] text-center font-bold text-gray-200">GALLERY</p>
+            <!-------=======-------->
+            <p class="absolute text-center md:pt-7 pt-3 font-bold">TOUR GALLERY</p>
+            <!-------=======-------->
+            <p class="absolute text-center md:pt-12 pt-7 font-bold text-xl text-[#6168FF]">Best Tourist's Shared Photos</p>
+        </div>
+        <div class="grid md:grid-cols-3 grid-cols-1 gap-8">
+            <!-------=== column 1 ===-------->
+            <div class="">
+                <a href="img/gallery/1.jpg" data-lightbox="mygallery"><img src="img/gallery/1.jpg" alt=""></a>
+            </div>
+            <!-------=== column 2 ===-------->
+            <div>
+                <a href="img/gallery/2.jpg" data-lightbox="mygallery"><img src="img/gallery/2.jpg" alt=""></a>
+            </div>
+            <!-------=== column 3 ===-------->
+            <div>
+                <a href="img/gallery/3.jpg" data-lightbox="mygallery"><img src="img/gallery/3.jpg" alt=""></a>
+            </div>
+            <!-------=== column 1 ===-------->
+            <div>
+                <a href="img/gallery/4.jpg" data-lightbox="mygallery"><img src="img/gallery/4.jpg" alt=""></a>
+            </div>
+            <!-------=== column 2 ===-------->
+            <div>
+                <a href="img/gallery/5.jpg" data-lightbox="mygallery"><img src="img/gallery/5.jpg" alt=""></a>
+            </div>
+            <!-------=== column 3 ===-------->
+            <div>
+                <a href="img/gallery/6.jpg" data-lightbox="mygallery"><img src="img/gallery/6.jpg" alt=""></a>
+            </div>        
+        </div>
+    </section>
+    <!---------==== section 4 end ===-------->
+
+    <!---------==== section 5 start ===-------->
+    <section id="five" class="container mx-auto px-5 md:pb-[100px] pb-[50px]">
+        <!-------=== section name ===-------->
+        <div class="relative flex justify-center pb-12">
+            <!-------=======-------->
+            <p class="relative md:text-[70px] text-[40px] text-center font-bold text-gray-200">PACKAGE</p>
+            <!-------=======-------->
+            <p class="absolute text-center md:pt-7 pt-3 font-bold">POPULAR PACKAGE</p>
+            <!-------=======-------->
+            <p class="absolute text-center md:pt-12 pt-7 font-bold text-xl text-[#6168FF]">The Best Of Our Packages</p>
+        </div>
+        <div class="grid md:grid-cols-3 grid-cols-1 gap-6">
+            <!-------=== column 1 start ===-------->
+            <div class="border border-2 group cursor-pointer rounded">
+                <!-------======-------->
+                <img src="img/package/1.jpg" alt="" class=" object-cover mx-auto">
+                <!-------======-------->
+                <div class="flex mt-[-20px] justify-end">
+                    <a href="#" class="text-right group-hover:bg-black py-2 duration-500 px-3 rounded-full bg-[#6168FF] text-white mr-3">$400 / Person</a>
+                </div>
+                <div class="px-6">
+                    <!-------=== svg (five star) ===-------->
+                    <div class="flex items-center justify-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-[#fec42d]">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-[#fec42d]">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-[#fec42d]">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-[#fec42d]">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-[#fec42d]">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                          </svg>
+                    </div>
+                      
+                    <!-------======-------->
+                    <p class="py-4 font-semibold text-xl ">Brazil Sea Beach</p>
+                    <div class="flex items-center justify-start pb-3">
+                        <!-------======-------->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        <!-------======-------->
+                        <p class="text-gray-500 mr-4">3 days</p>
+                        <!-------======-------->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                          </svg>
+                        <!-------======-------->
+                        <p class="text-gray-500">Brazil</p>
+                    </div>
+                </div>
+            </div>
+            <!-------=== column 1 end ===-------->
+
+            <!-------=== column 2 start ===-------->
+            <div class="border border-2 group cursor-pointer rounded">
+                <!-------======-------->
+                <img src="img/package/2.jpg" alt="" class=" object-cover mx-auto">
+                <!-------======-------->
+                <div class="flex mt-[-20px] justify-end">
+                    <a href="#" class="text-right group-hover:bg-black py-2 duration-500 px-3 rounded-full bg-[#6168FF] text-white mr-3">$400 / Person</a>
+                </div>
+                <div class="px-6">
+                    <!-------=== svg (five star) ===-------->
+                    <div class="flex items-center justify-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-[#fec42d]">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-[#fec42d]">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-[#fec42d]">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-[#fec42d]">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-[#fec42d]">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                          </svg>
+                    </div>
+                      
+                    <!-------======-------->
+                    <p class="py-4 font-semibold text-xl ">Brazil Sea Beach</p>
+                    <div class="flex items-center justify-start pb-3">
+                        <!-------======-------->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        <!-------======-------->
+                        <p class="text-gray-500 mr-4">3 days</p>
+                        <!-------======-------->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                          </svg>
+                        <!-------======-------->
+                        <p class="text-gray-500">Brazil</p>
+                    </div>
+                </div>
+            </div>
+            <!-------=== column 2 end ===-------->
+
+            <!-------=== column 3 start ===-------->
+            <div class="border border-2 group cursor-pointer rounded">
+                <!-------======-------->
+                <img src="img/package/3.jpg" alt="" class=" object-cover mx-auto">
+                <!-------======-------->
+                <div class="flex mt-[-20px] justify-end">
+                    <a href="#" class="text-right group-hover:bg-black py-2 duration-500 px-3 rounded-full bg-[#6168FF] text-white mr-3">$400 / Person</a>
+                </div>
+                <div class="px-6">
+                    <!-------=== svg (five star) ===-------->
+                    <div class="flex items-center justify-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-[#fec42d]">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-[#fec42d]">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-[#fec42d]">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-[#fec42d]">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-[#fec42d]">
+                            <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                          </svg>
+                    </div>
+                      
+                    <!-------======-------->
+                    <p class="py-4 font-semibold text-xl ">Brazil Sea Beach</p>
+                    <div class="flex items-center justify-start pb-3">
+                        <!-------======-------->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        <!-------======-------->
+                        <p class="text-gray-500 mr-4">3 days</p>
+                        <!-------======-------->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                          </svg>
+                        <!-------======-------->
+                        <p class="text-gray-500">Brazil</p>
+                    </div>
+                </div>
+            </div>
+            <!-------=== column 3 end ===-------->
+        </div>
+        <div id="client" class="py-20 h-[300px]">
+            <div class="bg-[#6168FF] relative">                
+                <div class="z-50 mx-auto grid lg:grid-cols-6 sm:grid-cols-3 grid-cols-2 items-center justify-between gap-3 py-[80px] px-[30px]">
+                    <img src="img/client/1.jpg" class="rounded mx-auto" alt="">
+                    <img src="img/client/2.jpg" class="rounded mx-auto" alt="">
+                    <img src="img/client/3.jpg" class="rounded mx-auto" alt="">
+                    <img src="img/client/4.jpg" class="rounded mx-auto" alt="">
+                    <img src="img/client/5.jpg" class="rounded mx-auto" alt="">
+                    <img src="img/client/6.jpg" class="rounded mx-auto" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------==== section 5 end ===-------->
+
+    <!-----===== footer start =====------>
+    <section id="footer" class="bg-[#6168FF]">
+        <div class="text-white container mx-auto xl:px-[120px] md:px-[60px] px-[30px] md:pt-[50px] pt-[25px]">
+            <div class="grid md:grid-cols-4 grid-cols-2 text-white">
+                <div class="mx-auto">
+                    <p class="md:pb-4 pb-2 font-bold md:text-2xl text-xl md:pt-0 pt-3">MAZHAR</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, natus!</p>
+                </div>
+                <div class="md:mx-auto sm:text-left text-right flex flex-col">
+                    <p class="md:pb-4 pb-2 font-bold md:text-2xl text-xl md:pt-0 pt-3">About us</p>
+                    <a href="#">Home</a>
+                    <a href="#">Service</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Location</a>
+                </div>
+                <div class="md:mx-auto flex flex-col">
+                    <p class="md:pb-4 pb-2 font-bold md:text-2xl text-xl md:pt-0 pt-3">Services</p>
+                    <a href="#">Home</a>
+                    <a href="#">Service</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Location</a>
+                </div>
+                <div class="md:mx-auto sm:text-left text-right flex flex-col">
+                    <p class="md:pb-4 pb-2 font-bold md:text-2xl text-xl md:pt-0 pt-3">Information</p>
+                    <a href="#">Home</a>
+                    <a href="#">Service</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Location</a>
+                </div>
+            </div>
+            <p class="text-center text-white pt-8 pb-2">Developed by MAZHARUL ISLAM</p>
+        </div>
+    </section>
+    <!-----===== footer end =====------>
+    
+
+
+    
+</body>
+
+</html>
